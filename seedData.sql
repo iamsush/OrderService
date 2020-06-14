@@ -1,6 +1,4 @@
--- DROP TABLE INVENTORY;
-
--- create DATABASE shop_db;
+create DATABASE shop_db;
 
 create table INVENTORY_TABLE (
 	product_id BIGSERIAL PRIMARY KEY,
