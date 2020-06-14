@@ -1,3 +1,8 @@
+/**
+ * Validate Products
+ * @param {Array} products - products to be validated
+ * @returns {bool}
+ */
 const validateProducts = async (products) => {
   return new Promise((resolve) => {
     if (!Array.isArray(products)) resolve(false);

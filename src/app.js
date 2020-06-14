@@ -9,9 +9,11 @@ const PORT = accessEnv('PORT', 7000);
 
 const app = express();
 
+// Request body parsing middleware supporting JSON, urlencoded, and multipart requests.
 app.use(json());
 
-// Whitelist or Blacklist origins here accorfingly. Right now allowing all to pass through
+// Whitelist or Blacklist origins here accorfingly.
+// Right now allowing requestsall to pass through
 app.use(
   cors({
     origin: (origin, cb) => cb(null, true),
